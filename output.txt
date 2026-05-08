@@ -1,0 +1,30 @@
+--- Compiling input.txt ---
+
+[Phase 1: Lexical Analysis]
+Successfully generated 21 tokens.
+
+[Phase 2: Syntactic Analysis]
+Successfully built Parse Tree.
+
+[Phase 3: Semantic Analysis]
+Successfully validated semantics and symbol table.
+
+[Phase 4: Intermediate Code Generation]
+Successfully generated 3-Address Code.
+
+[Phase 5: Python Code Generation]
+Successfully generated executable Python script.
+
+[Phase 6: Generated Python Execution]
+Successfully executed generated Python script.
+
+--- Intermediate Code (TAC) ---
+a = TRUE
+b = FALSE
+t1 = NOT b
+t2 = a AND t1
+c = t2
+PRINT c
+
+--- Generated Python Output ---
+True

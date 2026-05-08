@@ -1,0 +1,4 @@
+uno = TRUE;
+dos = FALSE;
+tres = (uno AND NOT dos) OR (dos OR FALSE);
+print(tres);

@@ -1,0 +1,2 @@
+a = (TRUE AND FALSE;
+print(a);

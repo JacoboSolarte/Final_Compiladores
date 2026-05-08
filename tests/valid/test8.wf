@@ -1,0 +1,5 @@
+a = FALSE;
+b = TRUE;
+c = NOT (a OR (b AND FALSE));
+d = c AND b;
+print(d);

@@ -1,0 +1,5 @@
+a = TRUE;
+b = TRUE;
+c = FALSE;
+resultado = (a AND b) OR NOT c;
+print(resultado);

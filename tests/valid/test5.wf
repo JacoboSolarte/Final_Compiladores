@@ -1,0 +1,4 @@
+x = FALSE;
+y = NOT x;
+z = (y AND TRUE) OR (x AND FALSE);
+print(z);
