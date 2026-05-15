@@ -7,7 +7,7 @@ statement : assignment | printStmt ;
 
 assignment : ID T_ASSIGN boolExpr T_SEMICOLON ;
 
-boolExpr : boolTerm ((T_AND | T_OR) boolTerm)* ;
+boolExpr : boolTerm ((T_AND | T_OR) boolTerm)* ; 
 
 boolTerm : T_NOT? (ID | T_TRUE | T_FALSE | NUMBER | T_LPAREN boolExpr T_RPAREN) ;
 

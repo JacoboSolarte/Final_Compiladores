@@ -1,24 +1,42 @@
---- Compiling input.txt ---
+--- Compiling tests/valid\test1.wf ---
 
-[Phase 1: Lexical Analysis]
-Successfully generated 21 tokens.
+[Fase 1: Análisis Léxico]
+  - Convirtiendo el texto fuente en una secuencia de tokens...
+  - Éxito: Se generaron 21 tokens correctamente.
 
-[Phase 2: Syntactic Analysis]
-Successfully built Parse Tree.
+[Fase 2: Análisis Sintáctico]
+  - Verificando la estructura gramatical y construyendo el Árbol de Derivación...
+  - Éxito: Estructura sintáctica válida. Árbol de Análisis construido.
 
-[Phase 3: Semantic Analysis]
-Successfully validated semantics and symbol table.
+[Fase 3: Análisis Semántico]
+  - Validando tipos de datos y consistencia de variables...
+  - Analizando asignación a la variable 'a'...
+  - Variable 'a' declarada correctamente como 'bool'.
+  - Analizando asignación a la variable 'b'...
+  - Variable 'b' declarada correctamente como 'bool'.
+  - Analizando asignación a la variable 'c'...
+  - Variable 'c' declarada correctamente como 'bool'.
+  - Verificando sentencia print para 'c'...
+  - Variable 'c' es válida para impresión.
+  - Éxito: Validación semántica completada sin errores.
 
-[Phase 4: Intermediate Code Generation]
-Successfully generated 3-Address Code.
+[Fase 4: Generación de Código Intermedio (TAC)]
+  - Transformando el árbol en instrucciones de Código de Tres Direcciones...
+  - Éxito: Código intermedio (TAC) generado.
 
-[Phase 5: Python Code Generation]
-Successfully generated executable Python script.
+[Fase 5: Generación de Código Python]
+  - Traduciendo el programa a un script ejecutable de Python...
+  - Éxito: Script de Python generado.
 
-[Phase 6: Generated Python Execution]
-Successfully executed generated Python script.
+[Fase 6: Ejecución del Código Generado]
+  - Iniciando la ejecución del script Python resultante...
+  - Éxito: El programa se ejecutó correctamente.
 
---- Intermediate Code (TAC) ---
+========================================
+RESUMEN DE RESULTADOS
+========================================
+
+--- Código Intermedio (TAC) ---
 a = TRUE
 b = FALSE
 t1 = NOT b
@@ -26,5 +44,12 @@ t2 = a AND t1
 c = t2
 PRINT c
 
---- Generated Python Output ---
-True
+--- Código Python Generado ---
+a = True
+b = False
+c = (a and (not b))
+print(c)
+
+--- Salida Final del Programa ---
+> True
+========================================
